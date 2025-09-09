@@ -1,0 +1,170 @@
+/* =========================
+   Kabadiwala Dashboard Styles
+   ========================= */
+
+/* Container */
+.dashboard-containerbuddy {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4ff, #e0f7f1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebarbuddy {
+  width: 250px;
+  background: linear-gradient(180deg, #004aad, #0073e6);
+  color: white;
+  padding: 25px 20px;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+  border-radius: 0 20px 20px 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebarbuddy h2 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: 1px;
+  animation: fadeInDown 1s ease;
+}
+
+.sidebarbuddy ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebarbuddy li {
+  margin: 15px 0;
+}
+
+.sidebarbuddy a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 14px;
+  display: block;
+  border-radius: 12px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.sidebarbuddy a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(6px);
+}
+
+/* Main Content */
+.main-contentbuddy {
+  flex: 1;
+  padding: 40px;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.main-contentbuddy h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #004aad;
+  border-left: 6px solid #0073e6;
+  padding-left: 12px;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #0073e6;
+}
+
+/* Buttons */
+.btn-primarybuddy {
+  background: linear-gradient(135deg, #0073e6, #00bcd4);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: transform 0.25s, background 0.25s;
+}
+
+.btn-primarybuddy:hover {
+  background: linear-gradient(135deg, #005bb5, #0097a7);
+  transform: scale(1.05);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background: #0073e6;
+  color: white;
+  font-size: 1rem;
+}
+
+td {
+  background: #f9fbff;
+  font-size: 0.95rem;
+}
+
+tr:hover td {
+  background: #eef6ff;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+form input, form select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.25s, box-shadow 0.25s;
+}
+
+form input:focus, form select:focus {
+  border: 1px solid #0073e6;
+  box-shadow: 0 0 8px rgba(0, 115, 230, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}

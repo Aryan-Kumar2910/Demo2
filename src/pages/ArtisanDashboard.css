@@ -1,0 +1,148 @@
+/* ArtisanDashboard.css */
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #2f855a; /* Green shade for artisans */
+  color: #fff;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 12px 0;
+}
+
+.sidebar ul li a {
+  color: #e6fffa;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background: #38a169;
+  color: #fff;
+}
+
+/* Main content */
+.main-content {
+    width: 1110px;
+  flex: 1;
+  padding: 30px;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2d3748;
+}
+
+/* Scrap Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table thead {
+  background: #2f855a;
+  color: #fff;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+table tbody tr:hover {
+  background: #f1f5f9;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-secondary {
+  background: #38a169;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #2f855a;
+}
+
+/* Upload Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+form label {
+  font-weight: 500;
+  color: #2d3748;
+}
+
+form input,
+form textarea,
+form select {
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-primary {
+  background: #2b6cb0;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background: #2c5282;
+}

@@ -1,0 +1,817 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* Hero Slider Container */
+.hero-sliderhome {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+/* Individual Slide */
+.hero-slidehome {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 1s ease, opacity 1s ease;
+  border-radius: 0px;
+}
+
+/* Gradient overlay for readability */
+.hero-slidehome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+  z-index: 1;
+}
+
+/* Slide Content */
+.hero-contenthome {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  text-align: left;
+  padding: 0 20px;
+  animation: fadeInUp 1s ease forwards;
+  color: #fff;
+}
+
+.hero-contenthome h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-contenthome p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #f0f0f0;
+}
+
+/* CTA Button */
+.btn-herohome {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #2b6cb0;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-herohome:hover {
+  background: #2c5282;
+  transform: translateY(-2px);
+}
+
+/* Modern Arrows */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.slick-arrow:hover {
+  background: rgba(0,0,0,0.8);
+  transform: scale(1.2) translateY(-50%);
+}
+
+.slick-prev {
+  left: 20px !important;
+}
+
+.slick-next {
+  right: 20px !important;
+}
+
+/* Slick Dots */
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #2b6cb0;
+  opacity: 1;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-contenthome h1 {
+    font-size: 2rem;
+  }
+  .hero-contenthome p {
+    font-size: 1rem;
+  }
+  .slick-arrow {
+    font-size: 2rem;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+
+
+
+
+/* Container */
+.containerhome {
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Roles Section */
+.roles-section-v2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.roles-header h2 {
+  font-size: 2.5rem;
+  color: #2c7a7b;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.roles-header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Roles Container - Grid */
+.roles-container-v2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Role Card */
+.role-card-v2 {
+  position: relative;
+  display: block;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.role-card-v2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Overlay gradient */
+.role-card-v2::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+  z-index: 1;
+  transition: background 0.4s ease;
+}
+
+/* Card Content */
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+  text-align: left;
+}
+
+.card-icon {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #f0f0f0;
+}
+
+/* CTA Text */
+.card-cta {
+  font-weight: 600;
+  color: #2b6cb0;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.role-card-v2:hover .card-cta {
+  color: #1a4e72;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .roles-header h2 {
+    font-size: 2rem;
+  }
+  .roles-header p {
+    font-size: 1rem;
+  }
+  .role-card-v2 {
+    height: 300px;
+  }
+  .card-content h3 {
+    font-size: 1.3rem;
+  }
+  .card-content p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Categories Section */
+.categories-sectionhome {
+  /* padding: 60px 20px; */
+  text-align: center;
+  background-color: white;
+  width: 100%; /* light background for contrast */
+}
+
+.categories-sectionhome h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c7a7b;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.categories-gridhome {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Individual Category Card */
+.category-cardhome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #2d3748;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-cardhome:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border-radius: 15px;
+}
+
+/* Circle Image */
+.circle-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 3px solid #2b6cb0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-cardhome:hover .circle-image {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Image inside circle */
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Category Name */
+.category-cardhome h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5px;
+  color: #2c7a7b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .categories-sectionhome h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .circle-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .category-cardhome h4 {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* Section Styling */
+.why-choose-sectionhome {
+  padding: 70px 20px;
+  background: white; /* eco-friendly soft green */
+  text-align: center;
+}
+
+.why-choose-sectionhome h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.why-choose-sectionhome h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background:black;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Slider Wrapper */
+.why-sliderhome {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Individual Card */
+.why-card {
+  background: #E6F4EA;
+  padding: 35px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  margin: 15px;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Icon Styling */
+.why-card .icon {
+  font-size: 2.8rem;
+  color: black;
+  margin-bottom: 18px;
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover .icon {
+  transform: scale(1.2);
+  color: #3182ce;
+}
+
+/* Title */
+.why-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #22543d;
+}
+
+/* Description */
+.why-card p {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Slick Dots */
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: black;
+  opacity: 0.6;
+}
+
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .why-card {
+    padding: 25px 20px;
+  }
+  .why-card h3 {
+    font-size: 1.2rem;
+  }
+  .why-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose-sectionhome h2 {
+    font-size: 2rem;
+  }
+  .why-card {
+    margin: 10px;
+    padding: 20px 15px;
+  }
+  .why-card h3 {
+    font-size: 1.1rem;
+  }
+  .why-card p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+.video-section {
+  text-align: center;
+  padding: 0; /* extra padding hata do for fullscreen */
+  margin: 0;
+  background: black; /* fallback bg */
+  width: 100%;
+}
+
+.video-container {
+  width: 100%;
+  height: 100vh; /* full viewport height */
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* video ko crop karke full screen fit karega */
+  border-radius: 0;   /* fullscreen me rounded corners hataye */
+  
+}
+
+
+
+
+
+/* src/pages/LandingPage.css */
+
+/* --- ✨ NEW: Multi-Slide Artisan Stories Styles ✨ --- */
+
+.stories-sectionhome {
+  padding: 80px 0;
+  background-color: var(--bg-light);
+}
+
+.stories-sectionhome h2 {
+  font-size: 2.8rem;
+  color: var(--primary-dark);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* This is the wrapper for each slide, used for padding */
+.story-slide-wrapper {
+  padding: 0 15px; /* Creates space between cards */
+}
+
+/* This is the visual card for each story */
+.story-card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  padding: 30px;
+  height: 100%; /* Ensures all cards have the same height */
+  display: flex !important; /* Use flexbox for vertical layout */
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center;
+}
+
+.story-image-wrapper {
+  flex-shrink: 0;
+  width: 150px; /* Adjust image size as needed */
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px; /* Space between image and text */
+  border: 4px solid var(--primary-color);
+   display: flex;
+}
+
+.story-image-v2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-content-v2 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows the content to fill the card height */
+}
+
+.story-text-v2 {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  font-style: italic;
+  flex-grow: 1; /* Pushes the name to the bottom */
+}
+
+.story-name-v2 {
+  margin-top: 20px; /* Space above the name */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+/* Optional: Style the slider arrows */
+.stories-sectionhome .slick-prev,
+.stories-sectionhome .slick-next {
+  background: var(--primary-dark);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 10;
+}
+.stories-sectionhome .slick-prev:before,
+.stories-sectionhome .slick-next:before {
+  font-size: 20px;
+  color: white;
+}
+
+
+
+
+
+/* src/pages/LandingPage.css */
+
+/* --- ✨ Impact Section V2 Styles ✨ --- */
+
+.impact-v2-sectionhome {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* Space between text and image */
+  padding: 80px 0;
+}
+
+.impact-v2-contenthome {
+  flex: 1; /* Takes up half the space */
+}
+
+.impact-v2-titlehome {
+  font-size: 2.8rem;
+  color: var(--primary-dark);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.impact-v2-descriptionhome {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.impact-v2-statshome {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for stats */
+  gap: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.impact-v2-stat-itemhome h3 {
+  font-size: 2.5rem; /* Big, bold numbers */
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0 0 5px 0;
+}
+
+.impact-v2-stat-itemhome p {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.impact-v2-imagehome {
+  flex: 1; /* Takes up the other half of the space */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.impact-v2-imagehome img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Responsive styles for mobile --- */
+@media (max-width: 992px) {
+  .impact-v2-sectionhome {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+
+  .impact-v2-imagehome {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+
+
+
+
+.quick-pickup-sectionhome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: white;
+  gap: 300px;
+  flex-wrap: wrap; /* ✅ mobile responsive */
+}
+
+/* Image Column */
+.pickup-image-columnhome {
+  flex: 1;
+  min-width: 320px;
+  max-width: 400px;  
+display: flex;
+  justify-content: center;
+  align-items: center;
+    background: white;
+    
+}
+
+.pickup-image-columnhome img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  object-fit: contain;   /* ✅ image cut na ho */
+  mix-blend-mode: multiply;
+}
+
+/* Form Column */
+.pickup-form-columnhome {
+   flex: 1;
+  min-width: 320px;
+  max-width: 450px;   /* ✅ form ki max width limit */
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.pickup-form-columnhome h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.pickup-form-columnhome p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.pickup-formhome {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pickup-formhome input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.pickup-formhome input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.3);
+}
+
+.pickup-formhome .btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.pickup-formhome .btn:hover {
+  background: #0056b3;
+}
+
+/* Feature Highlights */
+.feature-highlightshome {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.feature-boxhome {
+  background: #f3f9ff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.feature-boxhome h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #007bff;
+}
+
+.feature-boxhome p {
+  font-size: 0.95rem;
+  color: #555;
+}
