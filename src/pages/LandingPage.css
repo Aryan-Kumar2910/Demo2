@@ -707,7 +707,7 @@ body{
   justify-content: center;
   padding: 60px 20px;
   background: white;
-  gap: 300px;
+  gap: 200px;
   flex-wrap: wrap; /* ✅ mobile responsive */
 }
 
@@ -715,13 +715,27 @@ body{
 .pickup-image-columnhome {
   flex: 1;
   min-width: 320px;
-  max-width: 400px;  
+  max-width: 500px;  
 display: flex;
   justify-content: center;
   align-items: center;
     background: white;
-    
+    flex-direction: column;
+    padding-bottom: 30px;
 }
+
+
+.pickup-image-columnhome h1 {
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+}
+.pickup-image-columnhome h3 {
+    color: black;
+    padding-bottom: 40px;
+}
+
+
 
 .pickup-image-columnhome img {
   width: 100%;

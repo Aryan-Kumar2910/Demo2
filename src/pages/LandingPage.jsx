@@ -226,8 +226,12 @@ const heroSlides = [
 {/* --- ✨ NEW: Quick Pickup Section ✨ --- */}
       <section className="quick-pickup-sectionhome">
         <div className="pickup-image-columnhome">
+        <h1>"<span style={{ color: "red" }}>Scrapido</span> – Where Waste Turns into Worth & Welfare."
+
+</h1><h3>"From AI-powered scrap estimates to kabadiwala-approved fair deals – every transaction fuels social impact and a greener tomorrow."</h3>
+
           <img 
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMgfZw2qZkVRj2zPmE9y0ymkgWoKahuDtIQ&s" 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTerPvpvjS6-RUBYVuxShWbY3n1vac8GT8sFg&s" 
             alt="Scrap pickup service" 
           />
         </div>
