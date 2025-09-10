@@ -276,7 +276,7 @@ const heroSlides = [
           <div className="roles-container-v2">
             {/* Household */}
             <Link
-              to="/dashboard/user"
+              to="/login/user"
               className="role-card-v2"
               style={{
                 backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiFun-D67hIbE486qb_NInIjoi1WBAoTKYZg&s')`,
@@ -292,7 +292,7 @@ const heroSlides = [
 
             {/* Scrap Buddy */}
             <Link
-              to="/dashboard/kabadiwala"
+              to="/login/kabadiwala"
               className="role-card-v2"
               style={{
                 backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzM2xNaW3ML5nS8crV19i-BFW9hYO-wzh_yQ&s')`,
@@ -308,7 +308,7 @@ const heroSlides = [
 
             {/* Artisan */}
             <Link
-              to="/dashboard/artisan"
+              to="/login/artisan"
               className="role-card-v2"
               style={{
                 backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvuAg2cGjTZkOKSAJJp3H2ZiUZFHTiwsEAgA&s')`,
